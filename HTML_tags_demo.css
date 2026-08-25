@@ -1,4 +1,10 @@
+/* Tag Selector (two tag types given)*/
+/* Comma between selectors is OR */
 h2 { color: firebrick;}
 
+/* More specific than just the tag */
+/* ID selector ( with the tag, in this case) */
 h2#Links {color: slateblue;  }
+
+/* Parent selector */
 div > h2 {color: rgb(96,96,96);  }
