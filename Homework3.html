@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+            <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Converse Sports Questionare</title>
+    </head>
+
+    <body>
+        <h1>Converse Sports Questionare</h1><br><br>
+
+        <h1>GET</h1>
+        <form method="get" action = "https://cs.converse.edu/CSC235/formecho.php">
+            <!--Ask Name (Text)-->
+            <label for="get-name">What is your name?</label>
+                <input type="text" id="get-name" name="name"><br><br>
+            
+            <!--Ask Date (Date)-->
+            <label for="get-start-date">What is today's date?</label>
+             <input 
+                    type="date" 
+                    id="get-start-date" 
+                    name="trip-start" 
+                    value="2026-09-01" 
+                    min="1900-01-01" 
+                    max="2026-12-31" 
+                    required><br><br>
+
+            <!--Ask Favorite Sport (Check Box)-->
+            <p>What is your favorite sport?<br>
+                <input type="radio" id="get-FavBasketball" name="FavSport" value="Basketball"><label for="get-FavBasketball">Basketball</label>
+                <input type="radio" id ="get-FavSoftball" name="FavSport" value="Softball"><label for="get-FavSoftball">Softball</label><br>
+                <input type="radio" id ="get-FavSoccer" name="FavSport" value="Soccer"><label for="get-FavSoccer">Soccer</label><br>
+                <input type="radio" id ="get-FavAcro-Tumb" name="FavSport" value="Acrobatics & Tumbling"><label for="get-FavAcro-Tumb">Acrobatics & Tumbling</label><br>
+                <input type="radio" id ="get-FavXC" name="FavSport" value="Cross Country"><label for="get-FavXC">Cross Country</label><br>
+                <input type="radio" id ="get-FavEquestrian" name="FavSport" value="Equestrian"><label for="get-FavEquestrian">Equestrian</label><br>
+                <input type="radio" id ="get-FavE-Sports" name="FavSport" value="E-Sports"><label for="get-FavE-Sports">E-Sports</label><br>
+                <input type="radio" id ="get-FavField-Hockey" name="FavSport" value="Field Hockey"><label for="get-FavField-Hockey">Field Hockey</label><br>
+                <input type="radio" id ="get-FavGolf" name="FavSport" value="Golf"><label for="get-FavGolf">Golf</label><br>
+                <input type="radio" id ="get-FavLacrosse" name="FavSport" value="Lacrosse"><label for="get-FavLacrosse">Lacrosse</label><br>
+                <input type="radio" id ="get-FavSpirit-Squad" name="FavSport" value="Spirit Squad"><label for="get-FavSpirit-Squad">Spirit Squad</label><br>
+                <input type="radio" id ="get-FavTennis" name="FavSport" value="Tennis"><label for="get-FavTennis">Tennis</label><br>
+                <input type="radio" id ="get-FavTrack-Field" name="FavSport" value="Track & Field"><label for="get-FavTrack-Field">Track & Field</label><br>
+                <input type="radio" id ="get-FavVolleyball" name="FavSport" value="Volleyball"><label for="get-FavVolleyball">Volleyball</label><br><br>
+
+            </p>
+
+            <!--My Favorite Sport (Hidden)-->
+            <input type="hidden" name="THE-BEST-SPORT" value="I just asked you what your favorite sport is, and guess what. 
+                        I don't care what your favorite sport is because basketball is the best sport. ¯\_(ツ)_/¯">
+
+            <!--Ask Sports Played (Check Box)-->
+            <p>Please select all of the sports that Converse offers that you played growing up.<br>
+                <input type="checkbox" id ="get-basketball" name="basketball" value="yes"><label for="get-basketball">Basketball</label><br>
+                <input type="checkbox" id ="get-softball" name="softball" value="yes"><label for="get-softball">Softball</label><br>
+                <input type="checkbox" id ="get-soccer" name="soccer" value="yes"><label for="get-soccer">Soccer</label><br>
+                <input type="checkbox" id ="get-acro-tumb" name="acro-tumb" value="yes"><label for="get-acro-tumb">Acrobatics & Tumbling</label><br>
+                <input type="checkbox" id ="get-XC" name="XC" value="yes"><label for="get-XC">Cross Country</label><br>
+                <input type="checkbox" id ="get-equestrian" name="equestrian" value="yes"><label for="get-equestrian">Equestrian</label><br>
+                <input type="checkbox" id ="get-esports" name="esports" value="yes"><label for="get-esports">E-Sports</label><br>
+                <input type="checkbox" id ="get-field-hockey" name="field-hockey" value="yes"><label for="get-field-hockey">Field Hockey</label><br>
+                <input type="checkbox" id ="get-Golf" name="Golf" value="yes"><label for="get-Golf">Golf</label><br>
+                <input type="checkbox" id ="get-Lacrosse" name="lacrosse" value="yes"><label for="get-Lacrosse">Lacrosse</label><br>
+                <input type="checkbox" id ="get-Spirit-Squad" name="spirit-squad" value="yes"><label for="get-Spirit-Squad">Spirit Squad</label><br>
+                <input type="checkbox" id ="get-Tennis" name="tennis" value="yes"><label for="get-Tennis">Tennis</label><br>
+                <input type="checkbox" id ="get-Track-Field" name="track-field" value="yes"><label for="get-Track-Field">Track & Field</label><br>
+                <input type="checkbox" id ="get-volleyball" name="volleyball" value="yes"><label for="get-volleyball">Volleyball</label><br><br>
+
+            </p>    
+
+            <!--Ask Rating (Number)-->
+            <label for="get-rating">On a scale of 1-10, how do you feel about the Athletic programs at Converse?</label>
+            <input type="number" id="get-rating" name="rating" min="1" max="10"><br><br>
+
+            <!--Ask Most Recent Sporting Event (Select)-->
+            <label for="get-prev-game">Select the most recent sporting event you have attended(if any):</label>
+            <select id="get-prev-game" name="prev-game">
+                <option value="None">I have not attended any</option>
+                <option value="basketball">Basketball</option>
+                <option value="softball">Softball</option>
+                <option value="soccer">Soccer</option>
+                <option value="acro-tumb">Acrobatics & Tumbling</option>
+                <option value="XC">Cross Country</option>
+                <option value="equestrian">Equestrian</option>
+                <option value="esports">E-Sports</option>
+                <option value="field-hockey">Field Hockey</option>
+                <option value="Golf">Golf</option>
+                <option value="Lacrosse">Lacrosse</option>
+                <option value="Spirit-Squad">Spirit Squad</option>
+                <option value="Tennis">Tennis</option>
+                <option value="Track-Field">Track & Field</option>
+                <option value="volleyball">Volleyball</option>
+                
+            </select><br><br>
+
+
+
+            <!--Ask Least Favorite Sport(Password)-->
+            <label for="get-lfSport">Now be honest, what is your least favorite sport?</label>
+                <input type="password" id="get-lfSport" name="get-lfSport"><br><br>
+
+            <!--Ask Additional Feedback (Textarea)-->
+            <label for="get-textarea">Please provide any additional feedback you have about the Converse Athletic programs:</label><br>
+            <textarea id="get-textarea" name="get-textarea" rows="4"></textarea><br><br>
+
+
+
+
+            <!-- Submit and Reset Buttons -->
+            <input type="submit"><input type="reset"> 
+
+
+        </form>
+
+
+        
+
+
+        <br><br><h1>POST</h1>
+            <form method="post" action = "https://cs.converse.edu/CSC235/formecho.php">
+                        <!--Ask Name (Text)-->
+                        <label for="post-name">What is your name?</label>
+                            <input type="text" id="post-name" name="name"><br><br>
+
+                <label for="post-start-date">What is today's date?</label>
+                 <input 
+                        type="date" 
+                        id="post-start-date" 
+                        name="trip-start" 
+                        value="2026-09-01" 
+                        min="1900-01-01" 
+                        max="2026-12-31" 
+                        required><br><br>
+            <!--Ask Favorite Sport (Check Box)-->
+            <p>What is your favorite sport?<br>
+                
+                <input type="radio" id ="post-Favbasketball" name="FavSport" value="post-FavBasketball"><label for="post-Favbasketball" >Basketball</label><br>
+                <input type="radio" id ="post-Favsoftball" name="FavSport" value="post-FavSoftball"><label for="post-Favsoftball" >Softball</label><br>
+                <input type="radio" id ="post-Favsoccer" name="FavSport" value="post-FavSoccer"><label for="post-Favsoccer" >Soccer</label><br>
+                <input type="radio" id ="post-Favacro-tumb" name="FavSport" value="post-FavAcrobatics & Tumbling"><label for="post-Favacro-tumb" >Acrobatics & Tumbling</label><br>
+                <input type="radio" id ="post-FavXC" name="FavSport" value="post-FavCross Country"><label for="post-FavXC" >Cross Country</label><br>
+                <input type="radio" id ="post-Favequestrian" name="FavSport" value="post-FavEquestrian"><label for="post-Favequestrian" >Equestrian</label><br>
+                <input type="radio" id ="post-Favesports" name="FavSport" value="post-FavE-Sports"><label for="post-Favesports" >E-Sports</label><br>
+                <input type="radio" id ="post-Favfield-hockey" name="FavSport" value="post-FavField Hockey"><label for="post-Favfield-hockey" >Field Hockey</label><br>
+                <input type="radio" id ="post-FavGolf" name="FavSport" value="post-FavGolf"><label for="post-FavGolf" >Golf</label><br>
+                <input type="radio" id ="post-FavLacrosse" name="FavSport" value="post-FavLacrosse"><label for="post-FavLacrosse" >Lacrosse</label><br>
+                <input type="radio" id ="post-FavSpirit-Squad" name="FavSport" value="post-FavSpirit Squad"><label for="post-FavSpirit-Squad" >Spirit Squad</label><br>
+                <input type="radio" id ="post-FavTennis" name="FavSport" value="post-FavTennis"><label for="post-FavTennis" >Tennis</label><br>
+                <input type="radio" id ="post-FavTrack-Field" name="FavSport" value="post-FavTrack & Field"><label for="post-FavTrack-Field" >Track & Field</label><br>
+                <input type="radio" id ="post-Favvolleyball" name="FavSport" value="post-FavVolleyball"><label for="post-Favvolleyball" >Volleyball</label><br><br>
+
+            </p>
+
+            <!--My Favorite Sport (Hidden)-->
+            <input type="hidden" name="THE-BEST-SPORT" value="I just asked you what your favorite sport is, and guess what. 
+                        I don't care what your favorite sport is because basketball is the best sport. ¯\_(ツ)_/¯">
+
+
+            <p>Please select all of the sports that Converse offers that you played growing up.<br>
+                <input type="checkbox" id ="post-basketball" name="basketball" value="yes"><label for="post-basketball">Basketball</label><br>
+                <input type="checkbox" id ="post-softball" name="softball" value="yes"><label for="post-softball">Softball</label><br>
+                <input type="checkbox" id ="post-soccer" name="soccer" value="yes"><label for="post-soccer">Soccer</label><br>
+                <input type="checkbox" id ="post-acro-tumb" name="acro-tumb" value="yes"><label for="post-acro-tumb">Acrobatics & Tumbling</label><br>
+                <input type="checkbox" id ="post-XC" name="XC" value="yes"><label for="post-XC">Cross Country</label><br>
+                <input type="checkbox" id ="post-equestrian" name="equestrian" value="yes"><label for="post-equestrian">Equestrian</label><br>
+                <input type="checkbox" id ="post-esports" name="esports" value="yes"><label for="post-esports">E-Sports</label><br>
+                <input type="checkbox" id ="post-field-hockey" name="field-hockey" value="yes"><label for="post-field-hockey">Field Hockey</label><br>
+                <input type="checkbox" id ="post-Golf" name="Golf" value="yes"><label for="post-Golf">Golf</label><br>
+                <input type="checkbox" id ="post-Lacrosse" name="lacrosse" value="yes"><label for="post-Lacrosse">Lacrosse</label><br>
+                <input type="checkbox" id ="post-Spirit-Squad" name="spirit-squad" value="yes"><label for="post-Spirit-Squad">Spirit Squad</label><br>
+                <input type="checkbox" id ="post-Tennis" name="tennis" value="yes"><label for="post-Tennis">Tennis</label><br>
+                <input type="checkbox" id ="post-Track-Field" name="track-field" value="yes"><label for="post-Track-Field">Track & Field</label><br>
+                <input type="checkbox" id ="post-volleyball" name="volleyball" value="yes"><label for="post-volleyball">Volleyball</label><br><br>
+
+            </p>    
+            <!--Ask Rating (Number)-->
+            <label for="post-rating">On a scale of 1-10, how do you feel about the Athletic programs at Converse?</label>
+            <input type="number" id="post-rating" name="rating" min="1" max="10"><br><br>
+
+            <!--Ask Most Recent Sporting Event (Select)-->
+            <label for="post-prev-game">Select the most recent sporting event you have attended(if any):</label>
+            <select id="post-prev-game" name="prev-game">
+                <option value="None">I have not attended any</option>
+                <option value="basketball">Basketball</option>
+                <option value="softball">Softball</option>
+                <option value="soccer">Soccer</option>
+                <option value="acro-tumb">Acrobatics & Tumbling</option>
+                <option value="XC">Cross Country</option>
+                <option value="equestrian">Equestrian</option>
+                <option value="esports">E-Sports</option>
+                <option value="field-hockey">Field Hockey</option>
+                <option value="Golf">Golf</option>
+                <option value="Lacrosse">Lacrosse</option>
+                <option value="Spirit-Squad">Spirit Squad</option>
+                <option value="Tennis">Tennis</option>
+                <option value="Track-Field">Track & Field</option>
+                <option value="volleyball">Volleyball</option>
+
+            </select><br><br>
+
+            <!--Ask Least Favorite Sport(Password)-->
+            <label for="post-lfSport">Now be honest, what is your least favorite sport?</label>
+                <input type="password" id="post-lfSport" name="post-lfSport"><br><br>
+
+            <!--Ask Additional Feedback (Textarea)-->
+            <label for="post-textarea">Please provide any additional feedback you have about the Converse Athletic programs:</label><br>
+            <textarea id="post-textarea" name="post-textarea" rows="4"></textarea><br><br>
+
+            <!-- Submit and Reset Buttons -->
+            <input type="submit"><input type="reset"> 
+
+            </form>
+
+
+    </body>
+
+
+
+
+</html>
