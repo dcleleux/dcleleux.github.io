@@ -1,0 +1,22 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: yellow;
+}
+
+h1 {
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h1.over-title {
+    color: darkblue;
+    text-align: left;
+}
+
+h1:hover {
+    color: navy;
+}
+
